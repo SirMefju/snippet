@@ -1,0 +1,5 @@
+gcc name.c
+sudo apt-get install libgtk2.0-dev
+pkg-config --cflags --libs gtk+-2.0
+gcc `pkg-config --cflags --libs gtk+-2.0` name.c -o name (executable)
+./name
